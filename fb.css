@@ -1,33 +1,284 @@
-.header{
-  background-color:#3b5998;
-  width:100%;
-  height:90px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-  margin:0;
-  font-family:Helvetica,Neue,Helvetica,Arial,sans-serif;
 
-}.logo{
-  width:50%;
-  padding-top:40px;
-  float:left;
- 
-
-}.login{
-  width:50%;
-  float:right;
-}.login-controls{
-  float:right;
-  padding-top:5px;
-
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
 }
-.logo-text{
-   color:#fff;
-   font-size:35px;
-   font-weight:bold;
-   text-decoration:none;
-   margin-left:170px;
-}td{
-  color:#fff;
+
+
+/*HEADER  */
+
+header {
+    height: 82px;
+    
+    background-color: #3b5998;
+}
+
+.header-container {
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Facebook logo */
+
+.logo {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+/* Login */
+
+.login-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+   
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.login-box input {
+    width: 150px;
+    height: 25px;
+    border: 1px solid #1d2a5b;
+}
+
+.login-box a {
+    color: #9cb4d8;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.login-btn {
+    margin-top: 19px;
+    height: 25px;
+    padding: 0 10px;
+
+    color: white;
+    background-color: #4267b2;
+
+    border: 1px solid #29487d;
+    font-weight: bold;
+}.login-btn:hover{
+  background-color:red;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Left */
+
+.left-section {
+    width: 55%;
+    padding-top: 65px;
+}
+
+.left-section h2 {
+    width: 500px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    color: #385898;
+}
+
+.network-image {
+    margin-top: 35px;
+}
+
+.network-image img {
+    width: 500px;
+}
+
+
+/* ================= SIGNUP ================= */
+
+.signup-section {
+    width: 430px;
+    padding-top: 35px;
+}
+
+.signup-section h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* Inputs */
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    width: 50%;
+}
+
+.full-input {
+    width: 100%;
+}
+
+.name-fields input,
+.full-input {
+    height: 42px;
+
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #606770;
+
+    margin: 8px 0;
+}
+
+
+/* Birthday */
+
+.birthday {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.birthday select {
+    height: 30px;
+    border: 1px solid #ccd0d5;
+    padding: 3px;
+}
+
+.birthday span,
+.gender span {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background-color: #606770;
+    color: white;
+
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/* Gender */
+
+.gender {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender label {
+    font-size: 16px;
+}
+
+
+/* Terms */
+
+.terms {
+    width: 400px;
+
+    color: #777;
+    font-size: 11px;
+    line-height: 1.4;
+
+    margin-top: 15px;
+}
+
+.terms a {
+    color: #385898;
+    text-decoration: none;
+}
+
+
+/* Sign Up */
+
+.signup-btn {
+    width: 190px;
+    height: 40px;
+
+    margin-top: 15px;
+
+    background-color: #42b72a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #36a420;
+}
+
+
+/* Create Page */
+
+.create-page {
+    margin-top: 25px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #606770;
+}
+
+.create-page a {
+    color: #385898;
+    text-decoration: none;
 }
